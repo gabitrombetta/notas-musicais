@@ -5,6 +5,9 @@ description = ""
 authors = ["Gabriela Trombetta <gabrielatrombetta20@gmail.com>"]
 readme = "README.md"
 
+[tool.poetry.scripts]
+escalas = "notas_musicais.cli:app"
+
 [tool.poetry.dependencies]
 python = "^3.12"
 typer = "^0.12.5"
