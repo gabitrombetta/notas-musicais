@@ -6,7 +6,7 @@ authors = ["Gabriela Trombetta <gabrielatrombetta20@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-escalas = "notas_musicais.cli:app"
+notas-musicais = "notas_musicais.cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.12"
