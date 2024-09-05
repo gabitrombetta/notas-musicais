@@ -46,3 +46,18 @@ def test_escala_cli_graus(grau):
     result = runner.invoke(app, ['escala', 'F'])
 
     assert grau in result.stdout
+
+
+# CAMPO HARMONICO
+@mark.parametrize('grau', ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii°'])
+def test_campo_harmonico_cli_graus(grau):
+    result = runner.invoke(app, ['campo-harmonico', 'C'])
+
+    assert grau in result.stdout
+
+
+@mark.parametrize('cifra', ['C', 'Dm', 'Em', 'F', 'G', 'Am', 'B°'])
+def test_campo_harmonico_cli_cifras(cifra):
+    result = runner.invoke(app, ['campo-harmonico', 'C'])
+
+    assert cifra in result.stdout
